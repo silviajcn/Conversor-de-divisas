@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Conversor de divisas</title>
+</head>
+<body>
+    <header>
+        <h1>Convesor de divisas</h1>
+        <img src="https://play-lh.googleusercontent.com/upAeEwZye14CZ9cEK3GVgIPbiZdc9YIzOSvHeYREDarO5Skd7t-2V68tUWRG6iGeBuQ" class="logo"><br>
+    </header>
+
+
+    <main>
+        <div class="caja">
+        <form>
+            <label>Cantidad de dinero:</label><br>
+            <input type="number" id="cantidad" min="1" max="1000000" placeholder="1"><br><br>
+
+            <label>De:</label>
+            <select id="divisas1">
+                <option disabled selected>Seleccione una moneda</option>
+                <option id="uno">Peso colombiano</option>
+                <option id="dos">Peso mexicano</option>
+                <option id="tres">Dolar estadounidense</option>
+                <option id="cuatro">Libra esterlina</option>
+                <option id="cinco">Euro</option>
+            </select>
+            
+            <label>a</label>
+            <select id="divisas2">
+                <option disabled selected>Seleccione una moneda</option>
+                <option id="">Peso colombiano</option>
+                <option id="">Peso mexicano</option>
+                <option id="">Dolar estadounidense</option>
+                <option id="">Libra esterlina</option>
+                <option id="">Euro</option>
+            </select>
+
+            <button id="cotizador">Convertir</button>
+
+            <h2 id="resultado">Resultado: </h2>
+            <div id="valor-resultado">
+        </form>
+
+        
+
+        </div>
+
+        </div>
+    </main>
+
+
+
+    <footer></footer>
+
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>
