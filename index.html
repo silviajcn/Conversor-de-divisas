@@ -11,54 +11,58 @@
 
 <body>
     <header>
-        <h1>Conversor de divisas</h1>
-        <img src="https://play-lh.googleusercontent.com/upAeEwZye14CZ9cEK3GVgIPbiZdc9YIzOSvHeYREDarO5Skd7t-2V68tUWRG6iGeBuQ"
-            class="logo"><br>
+        <h1>Conversor de Divisas</h1>
+        <img src="images/conversor-imagen.png"
+            class="logo" alt="imagen conversor">
     </header>
 
 
+    <!--Formulario-->
     <main>
         <div class="caja">
-            <form>
-                <label>Cantidad de dinero:</label><br>
-                <input type="number" id="cantidad" min="1" max="1000000" placeholder="1"><br><br>
+            <form id="formulario">
 
-                <label>De:</label>
-                <select id="divisas1">
-                    <option id="0" value="0">Seleccione una opcion</option>
-                    <option id="COP1">Peso colombiano</option>
-                    <option id="MXN">Peso mexicano</option>
-                    <option id="USD1">Dolar estadounidense</option>
-                    <option id="GBP1">Libra esterlina</option>
-                    <option id="EUR1">Euro</option>
-                </select>
+                <!--Primera opcion de monedas-->
+                <div class="container1">
+                    <input type="number" id="primer_valor" placeholder="1" value="1"><!--Cantidad de dinero que se quiere saber-->
+                    <select id="divisas1">
+                       <option value="COP" selected>COP - Peso colombiano</option>
+                       <option value="MXN">MXN - Peso mexicano</option>
+                       <option value="USD">USD - Dolar</option>
+                       <option value="GBP">GBP - Libra esterlina</option>
+                       <option value="EUR">EUR - Euro</option>
+                    </select>
+                </div>
 
-                <label>a</label>
-                <select id="divisas2">
-                    <option id="0">Seleccione una opcion</option>
-                    <option id="COP2">Peso colombiano</option>
-                    <option id="MXN2">Peso mexicano</option>
-                    <option id="USD2">Dolar estadounidense</option>
-                    <option id="GBP2">Libra esterlina</option>
-                    <option id="EUR2">Euro</option>
-                </select>
+                
+                <!--boton de cambiar-->
+                <div class="container-button">
+                    <div class="valor_actual" id="valor_actual"></div><!--Valor de la moneda-->
+                    <button type="button" class="invertir" id="invertir">Cambiar</button><!--boton de intercambiar monedas-->
+                </div>
 
-                <button id="cotizador">Convertir</button>
-
-                <h2 id="resultado">Resultado: </h2>
-                <div id="valor-resultado">
+                
+                <!--Segunda opcion de monedas-->
+                <div class="container2">
+                    <input type="number" id="segundo_valor"><!--Cantidad de dinero al cambio-->
+                    <select id="divisas2">
+                       <option value="COP">COP - Peso colombiano</option>
+                       <option value="MXN">MXN - Peso mexicano</option>
+                       <option value="USD" selected>USD - Dolar</option>
+                       <option value="GBP">GBP - Libra esterlina</option>
+                       <option value="EUR">EUR - Euro</option>
+                    </select>
+                </div>
+                
             </form>
-
-
-
         </div>
 
-        </div>
     </main>
 
 
-
-    <footer></footer>
+    <footer>
+        <p class="pie">oct 2021.</p>
+    </footer>
 
 
     <script src="scripts/index.js"></script>
